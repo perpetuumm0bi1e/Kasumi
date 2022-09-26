@@ -1,0 +1,101 @@
+﻿<Window x:Class="KASUMI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KASUMI"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        ResizeMode="NoResize"
+        Style="{DynamicResource mainWindowStyle}">
+    <Window.Resources>
+        <ResourceDictionary Source="style.xaml"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="gradient 9.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="856*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="571*"/>
+            <RowDefinition Height="40*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0">
+
+            <Menu>
+                <MenuItem Header="Файл">
+                </MenuItem>
+
+                <MenuItem Header="Справка">
+                </MenuItem>
+            </Menu>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Rectangle Width="900" Height="580" Stroke="Black" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="3">
+                <Rectangle Width="2" Height="577" Stroke="Black" StrokeThickness="2" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Rectangle Fill="WhiteSmoke" Width="535" Height="575" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </Grid>
+
+        <!--
+        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Menu>
+                    <MenuItem Header="Файл">
+                    </MenuItem>
+
+                    <MenuItem Header="Справка">
+                    </MenuItem>
+                </Menu>
+                <Label Content="霞" Style="{DynamicResource logoStyle}"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Label Content="K A S U M I" Style="{DynamicResource logoLabelStyle}"/>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1" Grid.RowSpan="2" Grid.Column="0">
+            <Label Content="Plain text:" Style="{DynamicResource labelStyle}"/>
+            <RichTextBox Height="150"/>
+            <Button Content="Upload" Style="{DynamicResource uploadButton}"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.RowSpan="2" Grid.Column="1">
+            <Label Content="Chipher text:" Style="{DynamicResource labelStyle}"/>
+            <RichTextBox Height="150"/>
+            <Button Content="Upload" Style="{DynamicResource uploadButton}"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.ColumnSpan="2">
+            <Label Content="Key (128 bit):" Style="{DynamicResource keyLabelStyle}"/>
+            <TextBox/>
+        </Grid>
+        <Grid Grid.Row="4" Grid.ColumnSpan="2">
+            <Button Content="Encrypt" HorizontalAlignment="Left" Style="{DynamicResource cryptButton}"/>
+            <Button Content="Decrypt" HorizontalAlignment="Right" Style="{DynamicResource cryptButton}"/>
+        </Grid>
+        -->
+    </Grid>
+</Window>

@@ -1,0 +1,164 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Стиль главного окна -->
+        <Style x:Key="mainWindowStyle">
+        <Setter Property="ItemsControl.Background" Value="AliceBlue"/>
+        <Setter Property="ItemsControl.Width" Value="1000"/>
+        <Setter Property="ItemsControl.Height" Value="700"/>
+    </Style>
+
+    <Style TargetType="Menu">
+        <Setter Property="ItemsControl.Height" Value="20"/>
+        <Setter Property="ItemsControl.VerticalAlignment" Value="Center"/>
+        <Setter Property="ItemsControl.Background" Value="Transparent"/>
+    </Style>
+
+    <Style TargetType="MenuItem">
+        <Setter Property="ItemsControl.FontFamily" Value="Dubai"/>
+        <Setter Property="ItemsControl.FontSize" Value="13"/>
+        <Setter Property="ItemsControl.FontWeight" Value="400"/>
+        <Setter Property="ItemsControl.Width" Value="60"/>
+        <Setter Property="ItemsControl.VerticalAlignment" Value="Bottom"/>
+        <Setter Property="ItemsControl.Margin" Value="50 0 0 0"/>
+        
+    </Style>
+
+    <!-- Стиль логотипа -->
+    <Style x:Key="logoStyle">
+        <Setter Property="ItemsControl.FontFamily" Value="Dubai"/>
+        <Setter Property="ItemsControl.FontSize" Value="60"/>
+        <Setter Property="ItemsControl.HorizontalAlignment" Value="Center"/>
+        <Setter Property="ItemsControl.VerticalAlignment" Value="Bottom"/>
+        <Setter Property="ItemsControl.Margin" Value="0 0 0 -20"/>
+        <Setter Property="ItemsControl.Foreground" Value="#960000"/> 
+    </Style>
+    
+    <Style x:Key="logoLabelStyle">
+        <Setter Property="ItemsControl.FontFamily" Value="Consolas"/>
+        <Setter Property="ItemsControl.FontSize" Value="40"/>
+        <Setter Property="ItemsControl.FontWeight" Value="400"/>
+        <Setter Property="ItemsControl.HorizontalAlignment" Value="Center"/>
+        <Setter Property="ItemsControl.VerticalAlignment" Value="Center"/>
+    </Style>
+
+
+    <!-- Стили надписей -->
+    <Style x:Key="labelStyle">
+        <Setter Property="ItemsControl.FontFamily" Value="Dubai"/>
+        <Setter Property="ItemsControl.FontSize" Value="18"/>
+        <Setter Property="ItemsControl.FontWeight" Value="400"/>
+        <Setter Property="ItemsControl.HorizontalAlignment" Value="Left"/>
+        <Setter Property="ItemsControl.Margin" Value="60 40 0 0"/>
+    </Style>
+    
+    <Style x:Key="keyLabelStyle">
+        <Setter Property="ItemsControl.FontFamily" Value="Dubai"/>
+        <Setter Property="ItemsControl.FontSize" Value="18"/>
+        <Setter Property="ItemsControl.FontWeight" Value="400"/>
+        <Setter Property="ItemsControl.HorizontalAlignment" Value="Left"/>
+        <Setter Property="ItemsControl.VerticalAlignment" Value="Top"/>
+        <Setter Property="ItemsControl.Margin" Value="200 -10 0 0"/>
+    </Style>
+
+    <Style TargetType="TextBox">
+        <Setter Property="FontFamily" Value="Dubai"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="ItemsControl.Margin" Value="140 -5 0 0"/>
+        <Setter Property="Width" Value="280"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Background" Value="#fbfbfb"/>
+        <Setter Property="Effect">
+            <Setter.Value>
+                <DropShadowEffect Color="black" Direction="300" BlurRadius="10" ShadowDepth="5" Opacity="0.1"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+                    <Border CornerRadius="5" Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <!-- Стиль вывода -->
+    <Style TargetType="RichTextBox">
+        <Setter Property="FontFamily" Value="Dubai"/>
+        <Setter Property="FontSize" Value="17"/>
+        <Setter Property="Margin" Value="0 0 0 45"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Width" Value="280"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Background" Value="#fbfbfb"/>
+        <Setter Property="Effect">
+            <Setter.Value>
+                <DropShadowEffect Color="black" Direction="300" BlurRadius="10" ShadowDepth="5" Opacity="0.1"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RichTextBox">
+                    <Border CornerRadius="5" Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="uploadButton">
+        <Setter Property="ItemsControl.FontFamily" Value="Dubai"/>
+        <Setter Property="ItemsControl.FontSize" Value="15"/>
+        <Setter Property="ItemsControl.FontWeight" Value="400"/>
+        <Setter Property="ItemsControl.Width" Value="120"/>
+        <Setter Property="ItemsControl.Height" Value="30"/>
+        <Setter Property="ItemsControl.Background" Value="#FFB9CEE6"/>
+        <Setter Property="ItemsControl.VerticalAlignment" Value="Bottom"/>
+        <Setter Property="ItemsControl.HorizontalAlignment" Value="Center"/>
+        <Setter Property="ItemsControl.Margin" Value="0 0 0 80"/>
+        <Setter Property="ItemsControl.Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="5" Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemsControl.Effect">
+            <Setter.Value>
+                <DropShadowEffect Color="black" Direction="300" BlurRadius="10" ShadowDepth="5" Opacity="0.1"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="cryptButton">
+        <Setter Property="ItemsControl.FontFamily" Value="Dubai"/>
+        <Setter Property="ItemsControl.FontSize" Value="17"/>
+        <Setter Property="ItemsControl.FontWeight" Value="400"/>
+        <Setter Property="ItemsControl.Width" Value="180"/>
+        <Setter Property="ItemsControl.Height" Value="40"/>
+        <Setter Property="ItemsControl.Background" Value="#FFB9CEE6"/>
+        <Setter Property="ItemsControl.VerticalAlignment" Value="Bottom"/>
+        <Setter Property="ItemsControl.Margin" Value="160 0 160 50"/>
+        <Setter Property="ItemsControl.Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="5" Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemsControl.Effect">
+            <Setter.Value>
+                <DropShadowEffect Color="black" Direction="300" BlurRadius="10" ShadowDepth="5" Opacity="0.1"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
