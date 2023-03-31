@@ -31,3 +31,59 @@ C:\Users\m2005838\Desktop\KASUMI\KASUMI\obj\Debug\KASUMI.csproj.GenerateResource
 C:\Users\m2005838\Desktop\KASUMI\KASUMI\obj\Debug\KASUMI.csproj.CoreCompileInputs.cache
 C:\Users\m2005838\Desktop\KASUMI\KASUMI\obj\Debug\KASUMI.exe
 C:\Users\m2005838\Desktop\KASUMI\KASUMI\obj\Debug\KASUMI.pdb
+C:\Users\m2005838\Source\Repos\perpetuumm0bi1e\Kasumi\KASUMI\bin\Debug\KASUMI.exe.config
+C:\Users\m2005838\Source\Repos\perpetuumm0bi1e\Kasumi\KASUMI\bin\Debug\KASUMI.exe
+C:\Users\m2005838\Source\Repos\perpetuumm0bi1e\Kasumi\KASUMI\bin\Debug\KASUMI.pdb
+C:\Users\m2005838\Source\Repos\perpetuumm0bi1e\Kasumi\KASUMI\obj\Debug\KASUMI.csproj.AssemblyReference.cache
+C:\Users\m2005838\Source\Repos\perpetuumm0bi1e\Kasumi\KASUMI\obj\Debug\style.baml
+C:\Users\m2005838\Source\Repos\perpetuumm0bi1e\Kasumi\KASUMI\obj\Debug\MainWindow.g.cs
+C:\Users\m2005838\Source\Repos\perpetuumm0bi1e\Kasumi\KASUMI\obj\Debug\App.g.cs
+C:\Users\m2005838\Source\Repos\perpetuumm0bi1e\Kasumi\KASUMI\obj\Debug\KASUMI_MarkupCompile.cache
+C:\Users\m2005838\Source\Repos\perpetuumm0bi1e\Kasumi\KASUMI\obj\Debug\KASUMI_MarkupCompile.lref
+C:\Users\m2005838\Source\Repos\perpetuumm0bi1e\Kasumi\KASUMI\obj\Debug\MainWindow.baml
+C:\Users\m2005838\Source\Repos\perpetuumm0bi1e\Kasumi\KASUMI\obj\Debug\KASUMI.g.resources
+C:\Users\m2005838\Source\Repos\perpetuumm0bi1e\Kasumi\KASUMI\obj\Debug\KASUMI.Properties.Resources.resources
+C:\Users\m2005838\Source\Repos\perpetuumm0bi1e\Kasumi\KASUMI\obj\Debug\KASUMI.csproj.GenerateResource.cache
+C:\Users\m2005838\Source\Repos\perpetuumm0bi1e\Kasumi\KASUMI\obj\Debug\KASUMI.csproj.CoreCompileInputs.cache
+C:\Users\m2005838\Source\Repos\perpetuumm0bi1e\Kasumi\KASUMI\obj\Debug\KASUMI.exe
+C:\Users\m2005838\Source\Repos\perpetuumm0bi1e\Kasumi\KASUMI\obj\Debug\KASUMI.pdb
+C:\Users\katku\Desktop\Kasumi\KASUMI\obj\Debug\aboutProgram.g.cs
+C:\Users\katku\Desktop\Kasumi\KASUMI\obj\Debug\aboutProgram.baml
+C:\Users\katku\Desktop\KASUMI\KASUMI\obj\Debug\algorithm.g.cs
+C:\Users\katku\Desktop\KASUMI\KASUMI\obj\Debug\algorithm.baml
+C:\Users\katku\Desktop\KASUMI\KASUMI\obj\Debug\Resources\FLoperation.g.cs
+C:\Users\katku\Desktop\KASUMI\KASUMI\obj\Debug\Resources\FLoperation.baml
+C:\Users\m2005838\Desktop\Kasumi\KASUMI\obj\Debug\aboutProgram.g.cs
+C:\Users\m2005838\Desktop\Kasumi\KASUMI\obj\Debug\algorithm.g.cs
+C:\Users\m2005838\Desktop\Kasumi\KASUMI\obj\Debug\Resources\FLoperation.g.cs
+C:\Users\m2005838\Desktop\Kasumi\KASUMI\obj\Debug\aboutProgram.baml
+C:\Users\m2005838\Desktop\Kasumi\KASUMI\obj\Debug\algorithm.baml
+C:\Users\m2005838\Desktop\Kasumi\KASUMI\obj\Debug\Resources\FLoperation.baml
+C:\Users\m2005838\Desktop\Kasumi\KASUMI\obj\Debug\message.g.cs
+C:\Users\m2005838\Desktop\Kasumi\KASUMI\obj\Debug\message.baml
+C:\Users\m2005838\Desktop\Kasumi\KASUMI\obj\Debug\KASUMI.csproj.SuggestedBindingRedirects.cache
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\bin\Debug\KASUMI.exe.config
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\bin\Debug\KASUMI.exe
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\bin\Debug\KASUMI.pdb
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\KASUMI.csproj.AssemblyReference.cache
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\KASUMI.csproj.SuggestedBindingRedirects.cache
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\style.baml
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\aboutProgram.g.cs
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\algorithm.g.cs
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\MainWindow.g.cs
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\message.g.cs
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\Resources\FLoperation.g.cs
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\App.g.cs
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\KASUMI_MarkupCompile.cache
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\KASUMI_MarkupCompile.lref
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\aboutProgram.baml
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\algorithm.baml
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\MainWindow.baml
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\message.baml
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\Resources\FLoperation.baml
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\KASUMI.g.resources
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\KASUMI.Properties.Resources.resources
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\KASUMI.csproj.GenerateResource.cache
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\KASUMI.csproj.CoreCompileInputs.cache
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\KASUMI.exe
+C:\Users\m2005838\Desktop\курсовая ИБ\Kasumi\KASUMI\obj\Debug\KASUMI.pdb

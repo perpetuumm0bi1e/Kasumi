@@ -118,10 +118,94 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="gradient_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gradient 9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="algorithm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\algorithm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FIdescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FIdescription.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FIscheme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FIscheme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FLdescription1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FLdescription1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FLdescription2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FLdescription2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FLoperations" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FLoperations.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FLscheme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FLscheme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FOdescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FOdescription.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FOoperation1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FOoperation1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FOoperation2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FOoperation2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FOscheme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FOscheme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="generate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\generate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Graphik_Light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Graphik-Light.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Graphik_Medium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Graphik-Medium.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Graphik_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Graphik-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Graphik_Semibold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Graphik-Semibold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JetBrainsMono_Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JetBrainsMono-Bold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="JetBrainsMono_Light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JetBrainsMono-Light.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="JetBrainsMono_Medium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JetBrainsMono-Medium.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="JetBrainsMono_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JetBrainsMono-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mainScheme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mainScheme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newIcon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newIcon2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YandexSansText_Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YandexSansText-Bold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="YandexSansText_Light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YandexSansText-Light.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="YandexSansText_Medium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YandexSansText-Medium.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="YandexSansText_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YandexSansText-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="YandexSansText_RegularItalic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YandexSansText-RegularItalic.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

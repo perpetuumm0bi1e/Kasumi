@@ -5,97 +5,127 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KASUMI"
         mc:Ignorable="d"
-        Title="MainWindow"
+        Title="Kasumi Cipher"
         ResizeMode="NoResize"
         Style="{DynamicResource mainWindowStyle}">
     <Window.Resources>
         <ResourceDictionary Source="style.xaml"/>
     </Window.Resources>
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="gradient 9.jpg"/>
-        </Grid.Background>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="40*"/>
-            <ColumnDefinition Width="856*"/>
-            <ColumnDefinition Width="40*"/>
-        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="40*"/>
-            <RowDefinition Height="571*"/>
-            <RowDefinition Height="40*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <Grid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0">
-
-            <Menu>
-                <MenuItem Header="Файл">
-                </MenuItem>
-
-                <MenuItem Header="Справка">
-                </MenuItem>
-            </Menu>
+        <Grid Grid.Row="0" Grid.RowSpan="3">
         </Grid>
-        <Grid Grid.Column="1" Grid.Row="1">
-            <Rectangle Width="900" Height="580" Stroke="Black" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        </Grid>
-        <Grid Grid.Column="1" Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-
-            <Grid Grid.Column="2" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="3">
-                <Rectangle Width="2" Height="577" Stroke="Black" StrokeThickness="2" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                <Rectangle Fill="WhiteSmoke" Width="535" Height="575" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Grid>
-        </Grid>
-
-        <!--
-        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+        <Grid Grid.Row="0">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
-                <Menu>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Menu Grid.ColumnSpan="2" Panel.ZIndex="2">
                     <MenuItem Header="Файл">
+                        <MenuItem Header="Параметры"/>
+                        <MenuItem Header="Действия с файлами">
+                            <MenuItem Header="Импорт" Click="openFile"/>
+                            <MenuItem Header="Экспорт" Click="exportFile"/>
+                            <MenuItem Header="Зашифровать" Click="encrypt_Click"/>
+                            <MenuItem Header="Расшифровать" Click="decrypt_Click"/>
+                        </MenuItem>
                     </MenuItem>
-
                     <MenuItem Header="Справка">
+                        <MenuItem Header="Алгоритм KASUMI" Click="algorithm_Click"/>
+                        <MenuItem Header="О программе" Click="aboutProgram_Click"/>
                     </MenuItem>
                 </Menu>
-                <Label Content="霞" Style="{DynamicResource logoStyle}"/>
+                <Grid Grid.Column="0" Grid.ColumnSpan="2" >
+                    <Label Content="KASUMI CIPHER" Style="{DynamicResource logoLabelStyle}" Panel.ZIndex="3"/>
+                </Grid>
             </Grid>
             <Grid Grid.Row="1">
-                <Label Content="K A S U M I" Style="{DynamicResource logoLabelStyle}"/>
+                <Canvas Width="700" Height="55"  VerticalAlignment="Top">
+                    <Border BorderThickness="0" CornerRadius="20" Background="#E5E5E5">
+                        <Rectangle Width="700" Height="55" Fill="Transparent" ClipToBounds="True"/>
+                    </Border>
+                </Canvas>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <Label Content="Key (ascii):" Margin="15" Style="{DynamicResource labelStyle}"/>
+                    <TextBox x:Name="keyBox"/>
+                    <Button x:Name="generate" Content="generate" Click="generate_Click" Style="{DynamicResource smallButton}" Margin="15"/>
+                </StackPanel>
             </Grid>
         </Grid>
-        <Grid Grid.Row="1" Grid.RowSpan="2" Grid.Column="0">
-            <Label Content="Plain text:" Style="{DynamicResource labelStyle}"/>
-            <RichTextBox Height="150"/>
-            <Button Content="Upload" Style="{DynamicResource uploadButton}"/>
+        <Grid Grid.Row="1" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Grid.ColumnSpan="2">
+                <Button x:Name ="encryption" Content="encryption mode" Style="{DynamicResource encryptButton}" Panel.ZIndex="2" Click="encryptionButton_Click" MouseEnter="encryption_MouseEnter" MouseLeave="encryption_MouseLeave"/>
+                <Button x:Name="decryption" Content="decryption mode" Style="{DynamicResource decryptButton}" Panel.ZIndex="2" Click="decryptionButton_Click" MouseEnter="decryption_MouseEnter" MouseLeave="decryption_MouseLeave"/>
+                <Canvas Height="450" Width="700" VerticalAlignment="Top" Margin="0 10 0 0" Panel.ZIndex="1">
+                    <Border BorderThickness="0" CornerRadius="30" Background="#E5E5E5">
+                        <Rectangle Width="700" Height="450" Fill="Transparent"/>
+                    </Border>
+                </Canvas>
+                <StackPanel x:Name="encryptionStackPanel" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Panel.ZIndex="2" Width="650" Margin="0 90">
+                    <StackPanel Orientation="Vertical" Width="325" HorizontalAlignment="Left">
+                        <StackPanel Orientation="Horizontal">
+                            <Label x:Name="plainTextLabel" Content="Plain text:" Margin="15" Style="{DynamicResource labelStyle}"/>
+                            <Button x:Name="importButtonPlain" Content="import" Click="openFile" Margin="65 15 15 15" Style="{DynamicResource smallButton}"/>
+                        </StackPanel>
+                        <RichTextBox x:Name="inputPlainData" Panel.ZIndex="3" Margin="0 5 10 5"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <RadioButton x:Name="inputPlainDataFormatHex" Content="HEX" Margin="0 20 40 0" Checked="inputPlainDataFormatHex_Checked"/>
+                            <RadioButton x:Name="inputPlainDataFormatAscii" Content="ASCII" Margin="40 20 0 0" IsChecked="True" Checked="inputPlainDataFormatAscii_Checked"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Width="325" HorizontalAlignment="Right">
+                        <StackPanel Orientation="Horizontal">
+                            <Label x:Name="outputCipherTextLabel" Content="Encryption result:" Margin="25 15" Style="{DynamicResource labelStyle}"/>
+                            <Button x:Name="exportButtonCipher" Content="export" Click="exportFile" Margin="5 15 15 15" Style="{DynamicResource smallButton}"/>
+                        </StackPanel>
+                        <RichTextBox x:Name="outputCipherData" Panel.ZIndex="4" Margin="10 5 0 5"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <RadioButton x:Name="outputCipherDataFormatHex" Content="HEX" Margin="0 20 40 0" Checked="outputCipherDataFormatHex_Checked"/>
+                            <RadioButton x:Name="outputCipherDataFormatAscii" Content="ASCII" Margin="40 20 0 0" IsChecked="True" Checked="outputCipherDataFormatAscii_Checked"/>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel x:Name="decryptionStackPanel" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Panel.ZIndex="2" Width="650" Margin="0 90">
+                    <StackPanel Orientation="Vertical" Width="325" HorizontalAlignment="Left">
+                        <StackPanel Orientation="Horizontal">
+                            <Label x:Name="cipherTextLabel" Content="Chipher text:" Margin="15" Style="{DynamicResource labelStyle}"/>
+                            <Button x:Name="importButtonCipher" Content="import" Click="openFile" Margin="51 15 15 15" Style="{DynamicResource smallButton}"/>
+                        </StackPanel>
+                        <RichTextBox x:Name="inputCipherData" Panel.ZIndex="3" Margin="0 5 10 5"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <RadioButton x:Name="inputCipherDataFormatHex" Content="HEX" Margin="0 20 40 0" Checked="inputCipherDataFormatHex_Checked"/>
+                            <RadioButton x:Name="inputCipherDataFormatAscii" Content="ASCII" Margin="40 20 0 0" IsChecked="True" Checked="inputCipherDataFormatAscii_Checked"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Width="325" HorizontalAlignment="Right">
+                        <StackPanel Orientation="Horizontal">
+                            <Label x:Name="outputPlainTextLabel" Content="Decryption result:" Margin="25 15" Style="{DynamicResource labelStyle}"/>
+                            <Button x:Name="exportButtonPlain" Content="export" Click="exportFile" Margin="5 15 15 15" Style="{DynamicResource smallButton}"/>
+                        </StackPanel>
+                        <RichTextBox x:Name="outputPlainData" Panel.ZIndex="4" Margin="10 5 0 5"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <RadioButton x:Name="outputPlainDataFormatHex" Content="HEX" Margin="0 20 40 0" Checked="outputPlainDataFormatHex_Checked"/>
+                            <RadioButton x:Name="outputPlainDataFormatAscii" Content="ASCII" Margin="40 20 0 0" IsChecked="True" Checked="outputPlainDataFormatAscii_Checked"/>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+                <Button x:Name="encryptButton" Content="ENCRYPT" Style="{DynamicResource bigButton}" Click="encrypt_Click" Panel.ZIndex="1"/>
+                <Button x:Name="decryptButton" Content="DECRYPT" Style="{DynamicResource bigButton}" Click="decrypt_Click"  Panel.ZIndex="1"/>
+            </Grid>
         </Grid>
-        <Grid Grid.Row="1" Grid.RowSpan="2" Grid.Column="1">
-            <Label Content="Chipher text:" Style="{DynamicResource labelStyle}"/>
-            <RichTextBox Height="150"/>
-            <Button Content="Upload" Style="{DynamicResource uploadButton}"/>
-        </Grid>
-        <Grid Grid.Row="3" Grid.ColumnSpan="2">
-            <Label Content="Key (128 bit):" Style="{DynamicResource keyLabelStyle}"/>
-            <TextBox/>
-        </Grid>
-        <Grid Grid.Row="4" Grid.ColumnSpan="2">
-            <Button Content="Encrypt" HorizontalAlignment="Left" Style="{DynamicResource cryptButton}"/>
-            <Button Content="Decrypt" HorizontalAlignment="Right" Style="{DynamicResource cryptButton}"/>
-        </Grid>
-        -->
     </Grid>
 </Window>

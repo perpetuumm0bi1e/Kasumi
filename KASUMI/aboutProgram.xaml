@@ -1,0 +1,38 @@
+﻿<Window x:Class="KASUMI.aboutProgram"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KASUMI"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="О программе"
+        Style="{DynamicResource aboutProgramWindowStyle }">
+    <Window.Resources>
+        <ResourceDictionary Source="style.xaml"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3">
+            <Label Content="Программная реализация алгоритма KASUMI" VerticalAlignment="Top" Style="{DynamicResource discription}"/>
+            <Label Content="Выполнила студентка группы БИСТ-20-1" VerticalAlignment="Center" Style="{DynamicResource discription}"/>
+            <Label Content="Кусанова Катерина Алексеевна" FontWeight="Bold" VerticalAlignment="Bottom" Style="{DynamicResource discription}"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3">
+            <Label Content="ИТКН Университет МИСИС" VerticalAlignment="Center" Style="{DynamicResource discription}"/>
+            <Label Content="МОСКВА 2022" VerticalAlignment="Bottom" Style="{DynamicResource discription}"/>
+        </Grid>
+    </Grid>
+</Window>

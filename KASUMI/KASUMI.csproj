@@ -14,6 +14,21 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +48,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>newIcon2.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -56,10 +74,30 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="message.xaml.cs">
+      <DependentUpon>message.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FLoperation.xaml.cs">
+      <DependentUpon>FLoperation.xaml</DependentUpon>
+    </Compile>
+    <Page Include="aboutProgram.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="algorithm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="aboutProgram.xaml.cs">
+      <DependentUpon>aboutProgram.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="algorithm.xaml.cs">
+      <DependentUpon>algorithm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -68,6 +106,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="message.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\FLoperation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="style.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -90,26 +136,103 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Resource Include="Resources\Neuemachina __regular.otf" />
+    <Resource Include="Resources\Soyuz Grotesk Bold.otf" />
+    <Resource Include="Resources\YandexSansText-Bold.ttf" />
+    <Resource Include="Resources\YandexSansText-Light.ttf" />
+    <Resource Include="Resources\YandexSansText-Medium.ttf" />
+    <Resource Include="Resources\YandexSansText-Regular.ttf" />
+    <Resource Include="Resources\YandexSansText-RegularItalic.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\JetBrainsMono-Bold.ttf" />
+    <Resource Include="Resources\JetBrainsMono-Light.ttf" />
+    <Resource Include="Resources\JetBrainsMono-Medium.ttf" />
+    <Resource Include="Resources\JetBrainsMono-Regular.ttf" />
+    <Resource Include="Resources\Graphik-Medium.ttf" />
+    <Resource Include="Resources\Graphik-Regular.ttf" />
+    <Resource Include="Resources\Graphik-Semibold.ttf" />
+    <Resource Include="Resources\Graphik-Light.ttf" />
+    <Resource Include="Resources\Gropled-Bold.otf" />
     <None Include="Resources\logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="logo.png" />
+    <Resource Include="Resources\mainScheme.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\gradient 9.jpg" />
+    <Resource Include="Resources\FLscheme.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="gradient 9.jpg" />
+    <None Include="Resources\FLoperations.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FLdescription2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FLdescription1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FOscheme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FOdescription.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FIscheme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FIdescription.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\generate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="algorithm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\algorithm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FOoperation1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FOoperation2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\newIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="newIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\newIcon2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="newIcon2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

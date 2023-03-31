@@ -1,0 +1,120 @@
+﻿<Window x:Class="KASUMI.algorithm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KASUMI"
+        mc:Ignorable="d"
+        Title="Алгоритм KASUMI" 
+        ResizeMode="NoResize"
+        Style="{DynamicResource algorithmWindowStyle}">
+    <Window.Resources>
+        <ResourceDictionary Source="style.xaml"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Label x:Name="label1" Content ="Алгоритм KASUMI" Style="{DynamicResource logoLabelStyle}"/>
+            <Canvas x:Name="canvas1" Width="550" Height="85"  VerticalAlignment="Bottom" Margin="0 0 0 35" Style="{DynamicResource canvas}">
+                <Border BorderThickness="0" CornerRadius="30, 30, 30, 30" Background="#E5E5E5">
+                    <Rectangle Width="550" Height="85" Fill="Transparent" ClipToBounds="True"/>
+                </Border>
+            </Canvas>
+            <Canvas x:Name="canvas4" Width="550" Height="200"  VerticalAlignment="Top" Margin="0 80 0 35" Style="{DynamicResource canvas}">
+                <Border BorderThickness="0" CornerRadius="30, 30, 30, 30" Background="#E5E5E5">
+                    <Rectangle Width="550" Height="200" Fill="Transparent" ClipToBounds="True"/>
+                </Border>
+            </Canvas>
+            <Canvas x:Name="canvas5" Width="550" Height="100"  VerticalAlignment="Top" Margin="0 575 0 35" Style="{DynamicResource canvas}">
+                <Border BorderThickness="0" CornerRadius="30, 30, 30, 30" Background="#E5E5E5">
+                    <Rectangle Width="550" Height="100" Fill="Transparent" ClipToBounds="True"/>
+                </Border>
+            </Canvas>
+            <Label x:Name="label3" Content="                                    Структура основана на 'вложенных' сетях Фейстеля. &#x0a;&#x0a;
+Сначала 64-битный блок открытого текста разбивается на два 32-битных субблока,&#x0a;            
+           после чего выполняются 8 раундов следующих преобразований:" Style="{DynamicResource algorithmTextStyle}"/>
+        </Grid>
+        <Grid Grid.Row="0" Grid.RowSpan="4">
+            <Image x:Name="image2" Source="Resources/FOScheme.png" Style="{DynamicResource image2Style}"/>
+            <Image x:Name="image3" Source="Resources/FIScheme.png" Style="{DynamicResource image3Style}"/>
+            <Image x:Name="image4" Source="Resources/FLScheme.png" Style="{DynamicResource image4Style}"/>
+            <Canvas x:Name="canvas3" Width="380" Height="555"  VerticalAlignment="Top" Margin="190 100 0 0" Style="{DynamicResource canvas}">
+                <Border BorderThickness="0" CornerRadius="30, 30, 30, 30" Background="#E5E5E5">
+                    <Rectangle Width="380" Height="555" Fill="Transparent" ClipToBounds="True"/>
+                </Border>
+            </Canvas>
+            <Label x:Name="label5" Content="Именно операция FO является вложенной сетью Фейстеля:&#x0a;&#x0a;&#x0a;
+  На вход подается 32-битный субблок и 2 ключа по 48 бит.&#x0a;&#x0a;&#x0a;
+    1.  Входная строка разделяется на две части&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;
+    2.  48-битные ключи разделяются на три части каждый&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;
+                 Затем осуществляется 3 раунда операций:&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;
+                                      На выходе получаются:" Style="{DynamicResource algorithmTextStyle}" Margin="190 130 0 0" Panel.ZIndex="1"/>
+            <Label x:Name="label6" Content="              L = L0 || R0&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;
+     KOi = KOi+1 || KOi+2 || KOi+3&#x0a;&#x0a;
+     KIi = KIi+1 || KIi+2 || KIi+3&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;
+Rj = FI(Li-1 XOR KOi,j, KIi,j) XOR Rj-1&#x0a;&#x0a;
+               Lj = Rj-1&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;
+              (L3 || R3)" FontFamily="/KASUMI;component/Resources/#JetBrains Mono" Margin="170 260 0 0" Panel.ZIndex="1" Style="{DynamicResource algorithmTextStyle}"/>
+            <Label x:Name="label7" Content="На вход подается 16-битный блок данных и 16-битный ключ.&#x0a;&#x0a;&#x0a;
+   Далее эти данные подвергаются следующей обработке:&#x0a;&#x0a;&#x0a;
+   1.  Вход I разделяется на две неравные составляющие: &#x0a;
+         9-битную левую часть и 7-битную правую.&#x0a;&#x0a;&#x0a;&#x0a;
+   2.  Ключ так же разделяется на 7-битную и 9-битную &#x0a;
+         компоненты&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;
+     Функция реализуется следующим набором операций:&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;
+                                    На выходе имеем значение:" Style="{DynamicResource algorithmTextStyle}" Margin="190 130 0 0" Panel.ZIndex="1"/>
+            <Label x:Name="label8" Content="
+          I = L0 || R0&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;
+    KIi,j = KIi,j,1 || KIi,j,2&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;
+             L1 = R0&#x0a;
+       L2 = R1 XOR KIi,j,2&#x0a;
+             L3 = R2&#x0a;
+      L4 = S7[L3] XOR TR(R3)&#x0a;
+      R1 = S9[L0] XOR ZE(R0)&#x0a;
+R2 = S7[L1] XOR TR(R1) XOR KIi,j,1&#x0a;
+     R3 = S9[L2] XOR ZE(R2)&#x0a;
+             R4 = R3&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;
+           (L4 || R4)" FontFamily="/KASUMI;component/Resources/#JetBrains Mono" Margin="185 265 0 0" Panel.ZIndex="1" Style="{DynamicResource algorithmTextStyle}"/>
+            <Label x:Name="label9" Content="
+На вход функции подается 32-битный блок данных и 32-битный ключ. &#x0a;&#x0a;
+             Далее эти данные подвергаются следующей обработке:&#x0a;&#x0a;
+               1.  Входная строка разделяется на две части по 16 бит&#x0a;&#x0a;&#x0a;&#x0a;
+               2.  Ключ разбивается на да 16-битных подключа&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;
+&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;
+  Выходные значения L' и R' получаются путем следующих действий:" Style="{DynamicResource algorithmTextStyle}" Margin="10 90 0 0" Panel.ZIndex="1"/>
+            <Label x:Name="label10" Content="
+          I = L || R&#x0a;&#x0a;&#x0a;&#x0a;
+     KLi = KLi,1 || KLi,2&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;
+&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;&#x0a;
+L' = L XOR ((R' │ KLi,2) &lt;&lt;&lt; 1)&#x0a;
+ R' = R XOR ((L &amp; KLi,1) &lt;&lt;&lt; 1)&#x0a;&#x0a;&#x0a;&#x0a;
+" FontFamily="/KASUMI;component/Resources/#JetBrains Mono" Margin="0 180 0 0" Panel.ZIndex="1" Style="{DynamicResource algorithmTextStyle}"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.RowSpan="3">
+            <Image x:Name="image1" Source="Resources/mainScheme.png" Style="{DynamicResource image1Style}"/>
+            <Canvas x:Name="canvas2" Width="550" Height="150"  VerticalAlignment="Bottom" Margin="0 0 0 120" Style="{DynamicResource canvas}">
+                <Border BorderThickness="0" CornerRadius="30, 30, 30, 30" Background="#E5E5E5">
+                    <Rectangle Width="550" Height="150" Fill="Transparent" ClipToBounds="True"/>
+                </Border>
+            </Canvas>
+            <Label x:Name="label4" Content="1.   Над обрабатываемым субблоком производятся зависящие от ключа&#x0a;
+      операции FL и FO (в указанной последовательности - в нечетных раундах, в&#x0a;
+      четных - наоборот);&#x0a;&#x0a;
+2.   Результат этих операций накладывается побитовой логической операцией&#x0a;
+       XOR на необработанный субблок;&#x0a;&#x0a;
+3.   Субблоки меняются местами" Style="{DynamicResource algorithmTextStyle}" Margin="0 310 0 0"/>
+        </Grid>
+        <Grid Grid.Row="3">
+            <Label x:Name="label2" Content ="Описание операций:" FontSize="16" Margin="0 85 0 0" Style="{DynamicResource logoLabelStyle}"/>
+            <Button x:Name="buttonFO" Content="FO" Style="{DynamicResource operationsButton}" Margin="0 0 0 20" Click="FO_Click"/>
+            <Button x:Name="buttonBack" Content="BACK" Style="{DynamicResource operationsButton}" Margin="0 0 0 20" Click="back_Click"/>
+            <Button x:Name="buttonFI" Content="FI" Style="{DynamicResource operationsButton}" Margin="380 0 0 20" Click="FI_Click"/>
+            <Button x:Name="buttonFL" Content="FL" Style="{DynamicResource operationsButton}" Margin="0 0 380 20" Click="FL_Click"/>
+        </Grid>
+    </Grid>
+</Window>

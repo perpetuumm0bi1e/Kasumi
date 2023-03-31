@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("gradient%209.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("newicon2.ico")]
 
 
