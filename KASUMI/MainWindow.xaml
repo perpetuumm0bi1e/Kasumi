@@ -31,7 +31,6 @@
                 </Grid.ColumnDefinitions>
                 <Menu Grid.ColumnSpan="2" Panel.ZIndex="2">
                     <MenuItem Header="Файл">
-                        <MenuItem Header="Параметры"/>
                         <MenuItem Header="Действия с файлами">
                             <MenuItem Header="Импорт" Click="openFile"/>
                             <MenuItem Header="Экспорт" Click="exportFile"/>
